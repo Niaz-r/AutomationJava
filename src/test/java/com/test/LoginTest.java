@@ -9,6 +9,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.driver.BaseDriver;
 import com.driver.PageDriver;
 import com.page.LoginPage;
+import com.utility.DataSet;
 import com.utility.ExtentFactory;
 
 public class LoginTest extends BaseDriver{
@@ -31,14 +32,15 @@ public class LoginTest extends BaseDriver{
 		
 	}
 	
-	@Test
-	public void loginTest() throws InterruptedException, Exception {
+	@Test(priority = 1,dataProvider = "loginData", dataProviderClass = DataSet.class )
+	public void loginTest(String firstName,String lastName) throws InterruptedException, Exception {
 		
 		childTest = parentTest.createNode("<span style=\"color:#FF8C00; font-size:14px; font-weight:bold;\">Login Test</span>");
 
 		
 		LoginPage loginPage = new LoginPage(childTest);
-		loginPage.login();
+		
+		loginPage.login(firstName, lastName);
 		
 		
 	}

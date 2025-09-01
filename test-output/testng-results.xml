@@ -1,29 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-02T01:13:30 BDT" name="Default suite" finished-at="2025-09-02T01:13:45 BDT" duration-ms="15098">
+  <suite started-at="2025-09-02T02:16:17 BDT" name="Default suite" finished-at="2025-09-02T02:16:43 BDT" duration-ms="26894">
     <groups>
     </groups>
-    <test started-at="2025-09-02T01:13:30 BDT" name="Default test" finished-at="2025-09-02T01:13:45 BDT" duration-ms="15098">
+    <test started-at="2025-09-02T02:16:17 BDT" name="Default test" finished-at="2025-09-02T02:16:43 BDT" duration-ms="26894">
       <class name="com.test.LoginTest">
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:com.test.LoginTest@6069db50]" started-at="2025-09-02T01:13:27 BDT" name="setupDriver" finished-at="2025-09-02T01:13:30 BDT" duration-ms="2965" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:com.test.LoginTest@6069db50]" started-at="2025-09-02T02:16:13 BDT" name="setupDriver" finished-at="2025-09-02T02:16:17 BDT" duration-ms="3354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:com.test.LoginTest@6069db50]" started-at="2025-09-02T01:13:30 BDT" name="openUrl" finished-at="2025-09-02T01:13:37 BDT" duration-ms="7092" status="PASS">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:com.test.LoginTest@6069db50]" started-at="2025-09-02T02:16:17 BDT" name="openUrl" finished-at="2025-09-02T02:16:23 BDT" duration-ms="6809" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openUrl -->
-        <test-method signature="loginTest()[pri:0, instance:com.test.LoginTest@6069db50]" started-at="2025-09-02T01:13:37 BDT" name="loginTest" finished-at="2025-09-02T01:13:44 BDT" duration-ms="7041" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:1, instance:com.test.LoginTest@6069db50]" started-at="2025-09-02T02:16:23 BDT" name="loginTest" data-provider="loginData" finished-at="2025-09-02T02:16:30 BDT" duration-ms="6586" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[niaz]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rahaman]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.test.LoginTest@6069db50]" started-at="2025-09-02T01:13:44 BDT" name="afterClass" finished-at="2025-09-02T01:13:45 BDT" duration-ms="874" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:1, instance:com.test.LoginTest@6069db50]" started-at="2025-09-02T02:16:30 BDT" name="loginTest" data-provider="loginData" finished-at="2025-09-02T02:16:37 BDT" duration-ms="6483" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ali]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[jakey]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:1, instance:com.test.LoginTest@6069db50]" started-at="2025-09-02T02:16:37 BDT" name="loginTest" data-provider="loginData" finished-at="2025-09-02T02:16:43 BDT" duration-ms="6411" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[toufiq]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[labib]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.test.LoginTest@6069db50]" started-at="2025-09-02T02:16:43 BDT" name="afterClass" finished-at="2025-09-02T02:16:43 BDT" duration-ms="505" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.LoginTest@6069db50]" started-at="2025-09-02T01:13:45 BDT" name="tearDown" finished-at="2025-09-02T01:13:45 BDT" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.LoginTest@6069db50]" started-at="2025-09-02T02:16:43 BDT" name="tearDown" finished-at="2025-09-02T02:16:44 BDT" duration-ms="362" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

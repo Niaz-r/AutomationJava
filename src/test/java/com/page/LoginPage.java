@@ -56,15 +56,15 @@ public class LoginPage extends CommonMethods {
 		WebElement submitBtn;
 	
 	
-	public void login() throws InterruptedException, Exception {
+	public void login(String firstn, String lastn) throws InterruptedException, Exception {
 		
 		try {
 			
 			if(firstName.isDisplayed()) {
-				firstName.sendKeys("Niaz");
+				firstName.sendKeys(firstn);
 				sleep(2000);
 				test.pass("test.pass(\"<p style=\\\"color:#28A745; font-size:13px; font-weight:bold;\\\"><b>First Name is found successfully!</b></p>\");\n");
-				   String screenshotPath = GetScreenShots.capture(PageDriver.getCurrentDriver(), "FirstName");
+				   String screenshotPath = GetScreenShots.capture(PageDriver.getCurrentDriver(), firstn);
 		
 			        test.pass("Screenshot:", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 			}
@@ -76,7 +76,7 @@ public class LoginPage extends CommonMethods {
 			  test.fail(t);
 			  @SuppressWarnings("unused")
 			  
-			    String screenshotPath = GetScreenShots.capture(PageDriver.getCurrentDriver(), "FirstName");
+			    String screenshotPath = GetScreenShots.capture(PageDriver.getCurrentDriver(), firstn);
 			    test.fail("Screenshot:", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 			 //   Assert.class (firstName.isDisplayed());
 			    PageDriver.getCurrentDriver().quit();
@@ -85,10 +85,10 @@ public class LoginPage extends CommonMethods {
 		try {
 			if(lastName.isDisplayed()) {
 				
-				lastName.sendKeys("Rahaman");
+				lastName.sendKeys(lastn);
 				sleep(2000);
 				test.pass("test.pass(\"<p style=\\\"color:#28A745; font-size:13px; font-weight:bold;\\\"><b>Lastt Name is found successfully!</b></p>\");\n");
-				  String screenshotPath = GetScreenShots.capture(PageDriver.getCurrentDriver(), "LastName");
+				  String screenshotPath = GetScreenShots.capture(PageDriver.getCurrentDriver(), lastn);
 			   
 				    test.pass("Screenshot:", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 				 
@@ -102,7 +102,7 @@ public class LoginPage extends CommonMethods {
 			  test.fail(t);
 			  @SuppressWarnings("unused")
 			  
-			    String screenshotPath = GetScreenShots.capture(PageDriver.getCurrentDriver(), "LastName");
+			    String screenshotPath = GetScreenShots.capture(PageDriver.getCurrentDriver(), lastn);
 		        String dest = System.getProperty("user.dir") + "\\ScreenShots\\" + "LastName.png";
 			    test.fail("Screenshot:", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 			 //   Assert.class (firstName.isDisplayed());
@@ -130,7 +130,7 @@ public class LoginPage extends CommonMethods {
 		        String dest = System.getProperty("user.dir") + "\\ScreenShots\\" + "submitbutton.png";
 			    test.fail("Screenshot:", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 			 //   Assert.class (firstName.isDisplayed());
-			    PageDriver.getCurrentDriver().quit();
+			 //   PageDriver.getCurrentDriver().quit();
 		}
 		
 	}
