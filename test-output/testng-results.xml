@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-01T21:20:33 BDT" name="Default suite" finished-at="2025-09-01T21:20:51 BDT" duration-ms="18560">
+  <suite started-at="2025-09-02T01:13:30 BDT" name="Default suite" finished-at="2025-09-02T01:13:45 BDT" duration-ms="15098">
     <groups>
     </groups>
-    <test started-at="2025-09-01T21:20:33 BDT" name="Default test" finished-at="2025-09-01T21:20:51 BDT" duration-ms="18560">
+    <test started-at="2025-09-02T01:13:30 BDT" name="Default test" finished-at="2025-09-02T01:13:45 BDT" duration-ms="15098">
       <class name="com.test.LoginTest">
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:com.test.LoginTest@6069db50]" started-at="2025-09-01T21:20:30 BDT" name="setupDriver" finished-at="2025-09-01T21:20:33 BDT" duration-ms="2951" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:com.test.LoginTest@6069db50]" started-at="2025-09-02T01:13:27 BDT" name="setupDriver" finished-at="2025-09-02T01:13:30 BDT" duration-ms="2965" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:com.test.LoginTest@6069db50]" started-at="2025-09-01T21:20:33 BDT" name="openUrl" finished-at="2025-09-01T21:20:43 BDT" duration-ms="10539" status="PASS">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:com.test.LoginTest@6069db50]" started-at="2025-09-02T01:13:30 BDT" name="openUrl" finished-at="2025-09-02T01:13:37 BDT" duration-ms="7092" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openUrl -->
-        <test-method signature="loginTest()[pri:0, instance:com.test.LoginTest@6069db50]" started-at="2025-09-01T21:20:43 BDT" name="loginTest" finished-at="2025-09-01T21:20:51 BDT" duration-ms="7477" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.test.LoginTest@6069db50]" started-at="2025-09-02T01:13:37 BDT" name="loginTest" finished-at="2025-09-02T01:13:44 BDT" duration-ms="7041" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.test.LoginTest@6069db50]" started-at="2025-09-01T21:20:51 BDT" name="afterClass" finished-at="2025-09-01T21:20:51 BDT" duration-ms="451" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.test.LoginTest@6069db50]" started-at="2025-09-02T01:13:44 BDT" name="afterClass" finished-at="2025-09-02T01:13:45 BDT" duration-ms="874" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.LoginTest@6069db50]" started-at="2025-09-01T21:20:51 BDT" name="tearDown" finished-at="2025-09-01T21:20:52 BDT" duration-ms="183" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.LoginTest@6069db50]" started-at="2025-09-02T01:13:45 BDT" name="tearDown" finished-at="2025-09-02T01:13:45 BDT" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -65,7 +65,7 @@ public class LoginPage extends CommonMethods {
 				sleep(2000);
 				test.pass("test.pass(\"<p style=\\\"color:#28A745; font-size:13px; font-weight:bold;\\\"><b>First Name is found successfully!</b></p>\");\n");
 				   String screenshotPath = GetScreenShots.capture(PageDriver.getCurrentDriver(), "FirstName");
-			        String dest = System.getProperty("user.dir") + "\\ScreenShots\\" + "FirstName.png";
+		
 			        test.pass("Screenshot:", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 			}
 			
@@ -77,7 +77,6 @@ public class LoginPage extends CommonMethods {
 			  @SuppressWarnings("unused")
 			  
 			    String screenshotPath = GetScreenShots.capture(PageDriver.getCurrentDriver(), "FirstName");
-		        String dest = System.getProperty("user.dir") + "\\ScreenShots\\" + "FirstName.png";
 			    test.fail("Screenshot:", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 			 //   Assert.class (firstName.isDisplayed());
 			    PageDriver.getCurrentDriver().quit();
@@ -90,7 +89,7 @@ public class LoginPage extends CommonMethods {
 				sleep(2000);
 				test.pass("test.pass(\"<p style=\\\"color:#28A745; font-size:13px; font-weight:bold;\\\"><b>Lastt Name is found successfully!</b></p>\");\n");
 				  String screenshotPath = GetScreenShots.capture(PageDriver.getCurrentDriver(), "LastName");
-			        String dest = System.getProperty("user.dir") + "\\ScreenShots\\" + "LastName.png";
+			   
 				    test.pass("Screenshot:", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 				 
 			}

@@ -14,7 +14,10 @@ public class GetScreenShots {
         TakesScreenshot ts = (TakesScreenshot) driver;
         File source = ts.getScreenshotAs(OutputType.FILE);
 
-        String dest = System.getProperty("user.dir") + "ScreenShots" + screenShotName + ".png";
+    //    String dest = System.getProperty("user.dir") + "/ScreenShots/" + screenShotName + ".png";
+        String dest = System.getProperty("user.dir") 
+                + File.separator + "ScreenShots" 
+                + File.separator + screenShotName + ".png";
         File destination = new File(dest);
 
         // Ensure folder exists
